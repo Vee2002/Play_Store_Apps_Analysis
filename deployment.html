@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Deployment</title>
+    <link rel="stylesheet" href="deployment.css">
+</head>
+<body>
+    <h1>APP SUCCESS PREDICTION</h1>
+    <title>Enter Inputs for Prediction of Your App</title>
+    <form action="/predict" method="post">
+        <label for="Reviews">Reviews: </label>
+        <input type="text" id="reviews" name="Reviews"><br><br>
+
+        <label for="Ratings">Rating: </label>
+        <input type="text" id="rating" name="Ratings"><br><br>
+
+        <p>For the Installs part, Select an option between 0 and 3 to that represents Low, Medium, High, Very High Respectively</p>
+
+        <label for="Installs">Installs</label>
+        <select id="installs" name="Installs">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br><br>
+    </form>
+</body>
+</html>
