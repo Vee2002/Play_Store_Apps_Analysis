@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Deployment</title>
+    <link rel="stylesheet" href="static/deployment.css">
+</head>
+<body>
+    <h1>APP SUCCESS PREDICTION</h1>
+    <title>Enter Inputs for Prediction of Your App</title>
+    <form action="/predict" method="post">
+        <label for="Reviews">Reviews: </label>
+        <input type="text" id="reviews" name="Reviews"><br><br>
+
+        <label for="Ratings">Ratings: </label>
+        <input type="text" id="rating" name="Ratings"><br><br>
+
+        <label for="Size">Size(KB): </label>
+        <input type="text" id="size" name="Size(KB)"><br><br>
+
+        <input type="submit" value="Predict">
+
+    </form>
+</body>
+</html>

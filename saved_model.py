@@ -12,5 +12,4 @@ best_model = joblib.load('best_model.pkl')
 # Make predictions
 prediction = best_model.predict(X_test_encoded)
 
-# Evaluate and print the precision score
-print(f"Precision score: {precision_score(y_test_encoded, prediction, average='weighted')}")
+print("Precision Score: ", precision_score(y_test_encoded,prediction,average='weighted'))
